@@ -1,0 +1,58 @@
+
+
+
+main {
+
+  background-image: url('../images/background.jpeg');
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+
+img{
+  display:block;
+  margin: auto;
+  width: 125px;
+  margin-bottom: 10px;
+}
+
+
+#mystuff{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto;
+}
+
+div{
+  padding: 25px;
+  margin:5px;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+@media screen and (min-width: 800px){
+
+  #mystuff{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+  }
+
+  div{
+    padding: 25px;
+    margin:5px;
+    display: flex;
+    justify-content: center;
+  }
+
+  div:nth-child(odd) {
+    border-style: solid;
+
+  }
+
+}
